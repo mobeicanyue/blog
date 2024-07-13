@@ -1,1 +1,0 @@
-hexo.extend.injector.register('head_begin', '<link rel="stylesheet" href="/css/avatar.css">', 'default');
