@@ -235,7 +235,7 @@ custom_js:
 
 # 指定自定义 .css 文件路径，用法和 custom_js 相同
 # The usage is the same as custom_js
-custom_css: https://cdn.jsdelivr.net/npm/lxgw-wenkai-screen-web/lxgwwenkaigbscreen/result.min.css
+custom_css: https://cdnjs.webstatic.cn/ajax/libs/lxgw-wenkai-screen-web/1.510.0/lxgwwenkaigbscreen/result.css
 
 custom_head: '<script async>
   let dnt = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
