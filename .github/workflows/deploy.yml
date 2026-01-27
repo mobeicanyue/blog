@@ -17,11 +17,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: oven-sh/setup-bun@v2
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10
 
       - name: Install Dependencies
         run: |
-          bun install
+          pnpm install
 
       # https://github.com/zhullyb/zhullyb.github.io/blob/master/.github/workflows/deploy.yml
       # 修复 hexo 生成的文件更新时间 为当前时间，实际应为提交时间
@@ -31,7 +33,7 @@ jobs:
 
       - name: Build Site
         run: |
-          bun generate
+          pnpm generate
 
       - name: Move baidu_verify
         run: |
